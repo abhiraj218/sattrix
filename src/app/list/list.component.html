@@ -1,0 +1,24 @@
+<table *ngIf="dataLoaded" class="table">
+    <thead>
+      <tr class="table">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>        
+        <th>City</th>        
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData trackBy:trackByIndex"  class="table">
+        <td>{{ row.username }}</td>
+        <td>{{ row.email }}</td>
+        <td>{{ row.phone }}</td>
+        <td>{{ row.city }}</td>
+        <td>
+            <span tappable (click)="edit(row,trackByIndex)">edit</span>&nbsp;            
+            <span tappable (click)="delete(row,trackByIndex)">Delete</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

@@ -1,0 +1,65 @@
+/* Global styles for the sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; /* Adjust this value based on your header height */
+  }
+  
+  .sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav-open {
+    width: 250px;
+  }
+  
+  /* Styles for the main content */
+  .main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+  
+  .content {
+    /* Adjust the margin-left value to accommodate the sidenav width */
+    margin-left: 0;
+  }
+  
+
+  div {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, button {
+    margin-bottom: 10px;
+    padding: 5px;
+  }

@@ -1,0 +1,22 @@
+
+  <div class="main">
+            <h2>Registration</h2>
+            <form (ngSubmit)="register()">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" [(ngModel)]="registerData.username" required>
+              
+              <label for="username">Email:</label>
+              <input type="text" id="username" name="username" [(ngModel)]="registerData.email" required>
+             
+              <label for="password">Phone:</label>
+              <input type="phone" id="phone" name="phone" [(ngModel)]="registerData.phone" required>
+              
+              <label for="password">City</label>
+              <input type="text" id="text" name="city" [(ngModel)]="registerData.city" required>
+              <button *ngIf="!fromEdit" type="submit">Register</button>
+              <button *ngIf="fromEdit" type="submit">Update</button>
+
+              
+            </form>
+  </div>
+  
